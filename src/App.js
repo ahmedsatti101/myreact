@@ -3,9 +3,9 @@ import './App.css';
 import Navbar from './components/Navbar'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './components/pages/Home/Home'
-import Products from './components/pages/Products';
-import Services from './components/pages/Services';
-import SignUp from './components/pages/SignUp';
+import Products from './components/pages/Products/Products';
+import Services from './components/pages/Services/Services';
+import SignUp from './components/pages/SignUp/SignUp';
 import Footer from './components/Footer';
 
 function App() {

@@ -1,21 +1,26 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 function CardItem(props) {
   return (
     <>
+      <ul>
         <li className="cards__items">
-            <Link className="cards__item__link" to={props.path}>
-                <figure className='cards__item__pic-warp' data-category={props.label}>
-                    <img className="cards__item__img" src={props.src} alt="Travel" />
-                </figure>
-                <div className="cards__item__info">
-                    <h5 className="cards__item__text">{props.text}</h5>
-                </div>
-            </Link>
+          <Link className="cards__item__link" to={props.path}>
+            <figure
+              className="cards__item__pic-warp"
+              data-category={props.label}
+            >
+              <img className="cards__item__img" src={props.src} alt="Travel" />
+            </figure>
+            <div className="cards__item__info">
+              <h5 className="cards__item__text">{props.text}</h5>
+            </div>
+          </Link>
         </li>
+      </ul>
     </>
-  )
+  );
 }
 
-export default CardItem
+export default CardItem;

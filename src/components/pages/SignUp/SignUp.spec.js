@@ -1,20 +1,19 @@
-import React from "react";
 import { render, screen } from "@testing-library/react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Services from "./Services";
 import Footer from "../../Footer";
+import SignUp from "../SignUp/SignUp";
 
-describe("Services page tests", () => {
-  it("should render the services page", () => {
+describe("Products page tests", () => {
+  it("Render sign-up page", () => {
     render(
       <Router>
         <Routes>
-          <Route path="/" element={<Services />} />
+          <Route path="/" element={<SignUp />} />
         </Routes>
       </Router>
     );
-    const expectedRes = screen.getByText("SERVICES");
-    expect(expectedRes).toBeVisible();
+    const pageText = screen.getByText("LIKE & SUBSCRIBE");
+    expect(pageText).toBeVisible();
   });
 
   it("Should render footer", () => {

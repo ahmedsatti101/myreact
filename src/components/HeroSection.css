@@ -1,12 +1,14 @@
-video {
+/* video {
   object-fit: cover;
   width: 100%;
   height: 100%;
   position: fixed;
   z-index: -1;
-}
+} */
 
 .hero-container {
+  background-image: url('/public/images/img-home.jpg');
+  background-size:auto;
   height: 100vh;
   width: 100%;
   display: flex;
